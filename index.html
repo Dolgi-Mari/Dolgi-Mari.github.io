@@ -1,0 +1,15 @@
+
+ <!-- Import the component -->
+ <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+ 
+ <model-viewer ios-src="NewShookyHigh.usdz" src="NewShookyHigh.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="0" environment-image="wooden-board-empty-table-top-blurred-background.jpg" shadow-softness="0.33" skybox-image="wooden-board-empty-table-top-blurred-background.jpg" exposure="2">
+     <div class="progress-bar hide" slot="progress-bar">
+         <div class="update-bar"></div>
+     </div>
+     <button slot="ar-button" id="ar-button">
+         View in your space
+     </button>
+     <div id="ar-prompt">
+         <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+     </div>
+ </model-viewer>
